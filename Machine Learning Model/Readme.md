@@ -102,3 +102,4 @@ This model supports:
 
 4. Financial anomaly detection
 ```
+plt.savefig("ml_model/predicted_vs_actual.png")
