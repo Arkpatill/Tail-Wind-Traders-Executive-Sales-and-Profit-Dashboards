@@ -46,16 +46,20 @@ Ensure the Excel files (_Tailwind-Traders-Sales.xlsx, Countries.xlsx) are in the
 Run the model:
 
 bash
-Copy
-Edit
+
 python "revenue_prediction_XG Boost.py"
-Output:
+```
+### Model Output:
 
-R² Score (expected ~0.84)
+After running, you'll see the model's performance metrics:
 
-Mean Squared Error (MSE)
+<img src="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/ml_model/accuracy%20value%20.png?raw=true" width="700"/>
+Metric	Value
+R² Score	0.8438
+MSE	10861.32
+RMSE	≈ 104 USD
 
-Feature importance plot (via Matplotlib)
+RMSE is the average deviation between predicted and actual revenue values.
 ```
 ---
 
@@ -85,3 +89,16 @@ Metric	Value
 R² Score	≈ 0.84
 MSE	≈ 10,816
 RMSE (Error)	≈ ±104 USD
+
+
+### Use Cases
+This model supports:
+```
+1. Sales forecasting
+
+2. Revenue analytics
+
+3. Decision dashboards
+
+4. Financial anomaly detection
+```
