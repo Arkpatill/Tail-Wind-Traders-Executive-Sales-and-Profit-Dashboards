@@ -52,13 +52,13 @@ python "revenue_prediction_XG Boost.py"
 ### Model Output:
 
 After running, you'll see the model's performance metrics:
-
 <img src="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/ml_model/accuracy%20value%20.png?raw=true" width="700"/>
+```
 Metric	Value
 R² Score	0.8438
 MSE	10861.32
 RMSE	≈ 104 USD
-
+```
 RMSE is the average deviation between predicted and actual revenue values.
 ```
 ---
