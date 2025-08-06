@@ -144,7 +144,7 @@ Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, d
 - Ensures accessibility and rapid decision-making from handheld devices
 
  
-![Mobile Dashboard](assets/mobile_optimzed_view.png)
+![Mobile Dashboard](assets/mobile_optimzed _view.png)
 
 
 
