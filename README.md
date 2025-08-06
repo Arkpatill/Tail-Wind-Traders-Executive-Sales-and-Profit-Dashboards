@@ -55,3 +55,25 @@ df = pd.read_csv(StringIO(data), sep=';')
 df
 ```
 ---
+
+### 3. **Star Schema & Currency Normalization**
+
+A robust star schema was designed in Power BI to support clean relationships, efficient querying, and scalable DAX calculations.
+
+####  Fact Tables
+- **Sales** – raw sales data including gross price, quantity, and product details
+- **Sales in USD** – currency-adjusted sales data using exchange rates
+
+####  Dimension Tables
+- **CalendarTable** – auto-generated using DAX for time intelligence
+- **Countries** – maps each customer region to its currency and exchange ID
+- **Exchange Data** – structured currency conversion table
+- **Purchases** – product-level metadata including returns, warranties, and suppliers
+
+All relationships were set with correct **cardinality** and **filter directions** for optimal model performance.
+
+ *Data Model View*  
+![Data Model](assets/data_model.png)
+
+---
+
