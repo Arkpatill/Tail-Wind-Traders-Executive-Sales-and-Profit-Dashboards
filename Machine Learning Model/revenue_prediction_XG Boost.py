@@ -62,4 +62,16 @@ model.get_booster().feature_names = X.columns.tolist()
 model.get_booster().feature_names = X.columns.tolist()
 model.get_booster().feature_names = X.columns.tolist()
 
+# Plot Actual vs Predicted Gross Revenue USD
+plt.figure(figsize=(10,6))
+plt.scatter(y_test, y_pred, alpha=0.6, color='teal', edgecolors='k')
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'r--', lw=2)
+plt.xlabel("Actual Revenue (USD)")
+plt.ylabel("Predicted Revenue (USD)")
+plt.title("Actual vs Predicted Gross Revenue")
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+
 
