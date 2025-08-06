@@ -146,7 +146,7 @@ Designed for accessibility on phones and tablets, with pinned KPIs:
 |----------------|------------------|
 | ![Sales](assets/sales_overview.png) | ![Profit](assets/profit_overview.png) |
 
----
+
 ---
 ##  Folder Structure
 
