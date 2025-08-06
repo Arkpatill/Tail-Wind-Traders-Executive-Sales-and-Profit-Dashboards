@@ -133,15 +133,16 @@ Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, d
 
 ---
 
-####  Mobile-Optimized Dashboard
+#### 📱 Mobile-Optimized Dashboard
 
 Designed for executives to access key business indicators on-the-go via Power BI mobile app:
 
 - Net Revenue (USD)
 - Quantity Purchased
 
+📷  
+![Mobile Dashboard](assets/mobile_optimzed_view.png)
 
-![Mobile Dashboard]([assets/mobile_optimzed_view.png](https://github.com/Arkpatill/Tail-Wind-Traders-Executive-Sales-and-Profit-Dashboards/blob/main/assets/mobile_optimzed%20_view.png))
 
 ---
 
