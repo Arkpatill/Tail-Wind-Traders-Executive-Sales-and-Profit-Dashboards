@@ -174,6 +174,24 @@ Enabled built-in **Power BI Subscriptions** and **data-driven alerts** to automa
 ![Subscription Setup](assets/subscription.png.png)
 
 ---
+## Repository Structure
+
+Tailwind-Traders-BI/
+├── README.md
+├── assets/
+│   ├── sales_report.png
+│   ├── exchange_rate_table.png
+│   ├── data_model.png
+│   ├── ytd_profit_kpis.png
+│   ├── sales_overview.png
+│   ├── profit_overview.png
+│   ├── mobile_optimzed_view.png
+│   └── subscription.png.png
+├── datasets/
+│   ├── Tailwind-Traders-Sales.xlsx
+│   ├── Purchases.xlsx
+│   └── Countries.xlsx
+└── Tailwind_Traders_Report.pbix
 
 
 
