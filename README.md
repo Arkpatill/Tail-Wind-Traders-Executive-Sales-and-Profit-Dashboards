@@ -1,152 +1,57 @@
-# 🛒 Tailwind Traders: Executive Sales & Profit Dashboard 
+# Tailwind Traders Executive BI Dashboard 
 
-This project showcases an end-to-end business intelligence solution for **Tailwind Traders**, built using Microsoft Power BI. It replicates the kind of data challenges faced by real-world organizations and demonstrates how to address them through data transformation, model design, advanced DAX, and dashboarding — aligned with the **Meesho Data Scientist – I** job description.
+This repository showcases a complete data-driven business intelligence solution for **Tailwind Traders**, built using Microsoft Power BI and Python. The goal was to transform raw sales and financial data into actionable insights for executive decision-making.
 
 ---
 
 ##  Business Objective
 
-Tailwind Traders required a set of strategic dashboards to:
-
-- Analyze global **sales**, **profits**, and **returns** across regions and products
-- Enable **data-driven decisions** for revenue growth and cost control
-- Provide executives with **mobile-ready performance summaries**
-- Deliver **automated alerts and insights** for ongoing monitoring
-
----
-
-##  Tech Stack
-
-| Tool          | Purpose                                      |
-|---------------|----------------------------------------------|
-| **Power BI**  | Core data modeling, DAX measures, dashboarding |
-| **Python (pandas)** | Data parsing for historical currency rates |
-| **DAX**       | Time-based calculations (YTD, QTD, MEDIAN)   |
-| **Excel**     | Source dataset preparation                   |
+Tailwind Traders required:
+- Global analysis of **sales**, **profits**, and **returns**
+- Currency normalization and country-wise performance
+- Temporal insights: **Yearly**, **Quarterly**, **YTD**
+- Automated dashboards with **subscriptions**, **mobile layout**, and **alerts**
 
 ---
 
-##  Features & Deliverables
+## Key Case Studies & Implementations
 
-###  Case Study Implementations:
+---
 
-   ### 1. **Sales Data Report**
-- Loaded structured `.xlsx` file into Power BI
+### 1. **Sales Data Report**
+
+- Imported structured `.xlsx` dataset into Power BI
+- Cleaned and validated data using Power Query
 - Calculated:
   - **Gross Revenue** = \$11,318
   - **Net Revenue** = \$12,137
-  - **Delta (Tax impact)** = Net – Gross = \$819
-    
-- Used Power Query to ensure column quality, data types, and validation
-- Prepared for further aggregation in unified USD model
+  - **Tax Impact (Delta)** = \$819
+- Ensured column profiling, histogram analysis, and type assignment
+
+📷 *Visual*  
+![Sales Report](assets/sales_report.png)
 
 ---
 
-   ### 2. **Data Preparation & Optimization**
-- Ensured accurate data types for:
-  - Purchase table (Date, Quantity, Price)
-  - Countries table (Currency, Country ID)
-- Merged and validated exchange rates with country info
-- Used the following **Python script** in Power BI to reshape and clean the currency exchange dataset:
+### 2. **Data Preparation & Exchange Rate Transformation**
+
+- Prepared and optimized the following:
+  - Purchases table
+  - Countries + Exchange Rate mapping
+- Used **Python script** in Power BI to parse and structure currency data:
 
 ```python
 import pandas as pd
 from io import StringIO
 
-# Simulated historical exchange rate string data (multi-line format)
-data = '''Date,USD,EUR,GBP,JPY
-2023-01-01,1.0,0.93,0.81,131.2
-2023-01-02,1.0,0.94,0.82,130.5
-'''
+data = """Exchange ID;ExchangeRate;Exchange Currency
+1;1;USD
+2;0.75;GBP
+3;0.85;EUR
+4;3.67;AED
+5;1.3;AUD"""
 
-# Read into DataFrame
-df = pd.read_csv(StringIO(data), parse_dates=["Date"])
-
-# Output cleaned data
-print(df_long.head())
+df = pd.read_csv(StringIO(data), sep=';')
+df
 ```
-
 ---
-
-### 3. **Currency Normalization and Star Schema Modeling**
-
-- Developed a clean **data model** with optimized relationships using **star schema**
-- Created the following tables in Power BI:
-
-####  Fact Tables
-- `Sales` – core transaction table with gross/net/tax details
-- `Sales in USD` – currency-normalized version using DAX logic and country joins
-
-####  Dimension Tables
-- `CalendarTable` – auto-generated using DAX for time intelligence
-- `Countries` – maps countries to their respective currencies and exchange rates
-- `Exchange Data` – historical exchange rate mapping table
-- `Purchases` – linked purchase behavior, warranty, and return status
-
-- Ensured proper **1-to-many** cardinality and active joins for clean visual interaction
-- Used these joins to drive DAX-based time-series insights, regional aggregations, and executive dashboard views
-
-####  Data Model Snapshot
-
-![Data Model](assets/s3.png)
-
----
-
-4. **Profitability Insights**
-   - Calculated:
-     - Yearly Profit Margin
-     - Quarterly Profit
-     - YTD Profit
-     - Median Sales
-   - Leveraged `DATESQTD()` and `TOTALYTD()` DAX functions
----
-
-### 5. **Executive Dashboard: Sales + Profit Overview**
-
-- Designed a responsive **Power BI dashboard** with rich KPI cards, comparative visuals, and trend analysis
-- Organized into two report tabs:
-  -  **Sales Overview** – stock, quantity, median sales, product-wise breakdown
-  -  **Profit Overview** – YTD profit, gross/net revenue USD, profit margins, country split
-- Used slicers and DAX filters to enable interactive data exploration
-- Applied **card visuals** and **performance analyzer** to monitor load time and responsiveness
-
-#### 🖼Sales Overview
-
-![Sales Overview](assets/sales_overview.png)
-
----
-
-####  Profit Overview
-
-![Profit Overview](assets/profit_overview.png)
-
----
-
-#### Mobile-Optimized Executive Dashboard
-
-Designed for accessibility on phones and tablets, with pinned KPIs:
-
-- Net Revenue (USD)
-- Quantity Purchased
-
-![Mobile Dashboard](assets/mobile_dashboard.png)
-
----
-6. **Monitoring Tools**
-   - Setup **Power BI Subscriptions** for weekly profit/sales reports
-   - Used **Performance Analyzer** to optimize visuals
-
----
----
-## Visual Snapshots
-
-> _Screenshots from actual Power BI implementation are available in the `/assets` folder._
-
-| Sales Overview | Profit Overview |
-|----------------|------------------|
-| ![Sales](assets/sales_overview.png) | ![Profit](assets/profit_overview.png) |
-
-
----
-##  Folder Structure
-
