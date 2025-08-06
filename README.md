@@ -77,3 +77,30 @@ All relationships were set with correct **cardinality** and **filter directions*
 
 ---
 
+### 4. **Profitability Metrics with Advanced DAX**
+
+Implemented key financial insights using **custom DAX measures** to support strategic analysis across time horizons:
+
+####  Measures Created
+- **Yearly Profit Margin**  
+  `Yearly Profit Margin = DIVIDE([Gross Revenue], [Net Revenue])`
+
+- **Quarterly Profit**  
+  Used `DATESQTD()` to segment profit by fiscal quarters
+
+- **Year-to-Date (YTD) Profit**  
+  Used `TOTALYTD()` to aggregate sales from the start of the year  
+  `YTD Profit = TOTALYTD([Net Revenue], 'CalendarTable'[Date])`
+
+- **Median Sales**  
+  Calculated using statistical DAX function:  
+  `Median Sales = MEDIAN('Sales in USD'[Gross Revenue])`
+
+####  Optimization
+- Used the **Performance Analyzer** to monitor DAX query time for card visuals
+- Ensured all metrics were below 200ms rendering time
+
+📷 *YTD Profit, KPIs, and DAX Cards*  
+![YTD Profit + KPIs](assets/ytd_profit_kpis.png)
+
+
