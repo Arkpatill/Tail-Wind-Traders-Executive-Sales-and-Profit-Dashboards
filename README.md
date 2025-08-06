@@ -14,6 +14,15 @@ Tailwind Traders required:
 
 ---
 
+##  Tools & Technologies
+
+| Stack           | Usage                           |
+| --------------- | ------------------------------- |
+| Power BI        | Core BI modeling & dashboarding |
+| DAX             | Time intelligence & KPI logic   |
+| Python (pandas) | Currency rate transformation    |
+| Excel           | Raw data input                  |
+
 ## Key Case Studies & Implementations
 
 ---
