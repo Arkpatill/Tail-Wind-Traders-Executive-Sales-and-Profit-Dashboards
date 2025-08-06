@@ -28,7 +28,7 @@ Tailwind Traders required:
   - **Tax Impact (Delta)** = \$819
 - Ensured column profiling, histogram analysis, and type assignment
 
-📷 *Visual*  
+  
 ![Sales Report](assets/sales_report.png)
 
 ---
