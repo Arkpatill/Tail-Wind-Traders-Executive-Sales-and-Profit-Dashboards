@@ -110,13 +110,16 @@ Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, d
 
 ####  Report Pages
 
+---
+
 #####  **Sales Overview**
 - Total Stock & Quantity Purchased
 - Loyalty Points by Country
 - Median Sales Distribution (Pie Chart)
 - Product-wise Quantity Sold (Bar Chart)
 - Median Sales Over Time (Line Chart)
-  
+
+ 
 ![Sales Overview](assets/sales_overview.png)
 
 ---
@@ -133,15 +136,16 @@ Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, d
 
 ---
 
-#### 📱 Mobile-Optimized Dashboard
+####  **Mobile-Optimized Executive View**
+- Built using **Power BI Mobile Layout Editor**
+- Optimized for key performance tiles:
+  - Sum of Net Revenue USD
+  - Sum of Quantity Purchased
+- Ensures accessibility and rapid decision-making from handheld devices
 
-Designed for executives to access key business indicators on-the-go via Power BI mobile app:
-
-- Net Revenue (USD)
-- Quantity Purchased
-
-📷  
+ 
 ![Mobile Dashboard](assets/mobile_optimzed_view.png)
+
 
 
 ---
