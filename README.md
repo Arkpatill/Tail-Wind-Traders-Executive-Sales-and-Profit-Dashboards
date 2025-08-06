@@ -141,7 +141,7 @@ Designed for executives to access key business indicators on-the-go via Power BI
 - Quantity Purchased
 
 
-![Mobile Dashboard](assets/mobile_optimzed_view.png)
+![Mobile Dashboard]([assets/mobile_optimzed_view.png](https://github.com/Arkpatill/Tail-Wind-Traders-Executive-Sales-and-Profit-Dashboards/blob/main/assets/mobile_optimzed%20_view.png))
 
 ---
 
