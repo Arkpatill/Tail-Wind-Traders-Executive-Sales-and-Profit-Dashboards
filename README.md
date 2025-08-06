@@ -65,9 +65,24 @@ df = pd.read_csv(StringIO(data), parse_dates=["Date"])
 print(df_long.head())
 ```
 
-3. **Currency Normalization**
-   - Created `Sales in USD` fact table using relationships + DAX
-   - Implemented normalized reporting across geographies
+ ### 3. **Currency Normalization and Star Schema Modeling**
+
+- Developed a clean **data model** with optimized relationships using **star schema**
+- Created the following tables in Power BI:
+
+####  Fact Tables
+- `Sales` – core transaction table with gross/net/tax details
+- `Sales in USD` – currency-normalized version using DAX logic and country joins
+
+#### Dimension Tables
+- `CalendarTable` – auto-generated using DAX for time intelligence
+- `Countries` – maps countries to their respective currencies and exchange rates
+- `Exchange Data` – historical exchange rate mapping table
+- `Purchases` – linked purchase behavior, warranty, and return status
+
+- Ensured proper **1-to-many** cardinality and active joins for clean visual interaction
+- Used these joins to drive DAX-based time-series insights, regional aggregations, and executive dashboard views
+
 
 4. **Profitability Insights**
    - Calculated:
