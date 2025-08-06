@@ -40,6 +40,7 @@ Tailwind Traders required a set of strategic dashboards to:
 - Used Power Query to ensure column quality, data types, and validation
 - Prepared for further aggregation in unified USD model
 
+---
 
    ### 2. **Data Preparation & Optimization**
 - Ensured accurate data types for:
@@ -65,6 +66,7 @@ df = pd.read_csv(StringIO(data), parse_dates=["Date"])
 print(df_long.head())
 ```
 
+---
 
 ### 3. **Currency Normalization and Star Schema Modeling**
 
@@ -88,7 +90,7 @@ print(df_long.head())
 
 ![Data Model](assets/s3.png)
 
-
+---
 
 4. **Profitability Insights**
    - Calculated:
@@ -97,19 +99,19 @@ print(df_long.head())
      - YTD Profit
      - Median Sales
    - Leveraged `DATESQTD()` and `TOTALYTD()` DAX functions
-
+---
 5. **Executive Dashboard**
    - Dual-page report: *Sales Overview* + *Profit Overview*
    - Created `CalendarTable` for time intelligence
    - Added card visuals, pie/bar/line charts
    - Pinned to **mobile-optimized dashboard**
-
+---
 6. **Monitoring Tools**
    - Setup **Power BI Subscriptions** for weekly profit/sales reports
    - Used **Performance Analyzer** to optimize visuals
 
 ---
-
+---
 ## Visual Snapshots
 
 > _Screenshots from actual Power BI implementation are available in the `/assets` folder._
@@ -119,6 +121,6 @@ print(df_long.head())
 | ![Sales](assets/sales_overview.png) | ![Profit](assets/profit_overview.png) |
 
 ---
-
+---
 ## 📂 Folder Structure
 
