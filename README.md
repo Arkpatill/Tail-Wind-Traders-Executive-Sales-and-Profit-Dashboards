@@ -41,9 +41,29 @@ Tailwind Traders required a set of strategic dashboards to:
 - Prepared for further aggregation in unified USD model
 
 
-2. **Data Preparation & Optimization**
-   - Purchase, Country & Exchange data types validated
-   - Applied **Python script** for exchange rate transformation
+   ### 2. **Data Preparation & Optimization**
+- Ensured accurate data types for:
+  - Purchase table (Date, Quantity, Price)
+  - Countries table (Currency, Country ID)
+- Merged and validated exchange rates with country info
+- Used the following **Python script** in Power BI to reshape and clean the currency exchange dataset:
+
+```python
+import pandas as pd
+from io import StringIO
+
+# Simulated historical exchange rate string data (multi-line format)
+data = '''Date,USD,EUR,GBP,JPY
+2023-01-01,1.0,0.93,0.81,131.2
+2023-01-02,1.0,0.94,0.82,130.5
+'''
+
+# Read into DataFrame
+df = pd.read_csv(StringIO(data), parse_dates=["Date"])
+
+# Output cleaned data
+print(df_long.head())
+```
 
 3. **Currency Normalization**
    - Created `Sales in USD` fact table using relationships + DAX
