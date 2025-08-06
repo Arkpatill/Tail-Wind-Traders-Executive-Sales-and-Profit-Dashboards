@@ -103,4 +103,47 @@ Implemented key financial insights using **custom DAX measures** to support stra
  *YTD Profit, KPIs, and DAX Cards*  
 ![YTD Profit + KPIs](assets/ytd_profit_kpis.png)
 
+---
+### 5. **Executive Dashboard: Sales & Profit Insights**
+
+Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, dynamic visualizations, and time-series intelligence.
+
+####  Report Pages
+
+#####  **Sales Overview**
+- Total Stock & Quantity Purchased
+- Loyalty Points by Country
+- Median Sales Distribution (Pie Chart)
+- Product-wise Quantity Sold (Bar Chart)
+- Median Sales Over Time (Line Chart)
+  
+![Sales Overview](assets/sales_overview.png)
+
+---
+
+#####  **Profit Overview**
+- Net Revenue (USD) by Product
+- YTD Profit
+- Gross Revenue Trend over Time
+- Profit Margin by Country (Donut Chart)
+- Yearly Profit Margin Over Time (Line Chart)
+
+  
+![Profit Overview](assets/profit_overview.png)
+
+---
+
+####  Mobile-Optimized Dashboard
+
+Designed for executives to access key business indicators on-the-go via Power BI mobile app:
+
+- Net Revenue (USD)
+- Quantity Purchased
+
+
+![Mobile Dashboard](assets/mobile_optimzed_view.png)
+
+---
+
+
 
