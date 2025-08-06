@@ -1,4 +1,4 @@
-# 🛒 Tailwind Traders: Executive Sales & Profit Dashboard (Power BI)
+# 🛒 Tailwind Traders: Executive Sales & Profit Dashboard 
 
 This project showcases an end-to-end business intelligence solution for **Tailwind Traders**, built using Microsoft Power BI. It replicates the kind of data challenges faced by real-world organizations and demonstrates how to address them through data transformation, model design, advanced DAX, and dashboarding — aligned with the **Meesho Data Scientist – I** job description.
 
@@ -30,9 +30,15 @@ Tailwind Traders required a set of strategic dashboards to:
 
 ###  Case Study Implementations:
 
-1. **Sales Data Report**
-   - Loaded structured `.xlsx` file
-   - Calculated Gross, Net, Tax-adjusted metrics
+   ### 1. **Sales Data Report**
+- Loaded structured `.xlsx` file into Power BI
+- Calculated:
+  - **Gross Revenue** = \$11,318
+  - **Net Revenue** = \$12,137
+  - **Delta (Tax impact)** = Net – Gross = \$819
+- Used Power Query to ensure column quality, data types, and validation
+- Prepared for further aggregation in unified USD model
+
 
 2. **Data Preparation & Optimization**
    - Purchase, Country & Exchange data types validated
