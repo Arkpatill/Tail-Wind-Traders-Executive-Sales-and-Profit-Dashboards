@@ -40,7 +40,7 @@ To build a high-accuracy regression model that:
 
 ```bash
 pip install xgboost scikit-learn pandas matplotlib openpyxl
-🚀 How to Run
+ How to Run
 Ensure the Excel files (_Tailwind-Traders-Sales.xlsx, Countries.xlsx) are in the same directory as the Python script.
 
 Run the model:
@@ -61,7 +61,7 @@ Feature importance plot (via Matplotlib)
 
 ### Model Features
 The model uses the following predictors:
-
+```
 Gross Product Price
 
 Tax Per Product
@@ -75,7 +75,7 @@ Net Revenue
 Gross Revenue
 
 Time Index
-
+```
 These features are engineered from raw sales and currency data for better prediction accuracy.
 
 ---
