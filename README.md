@@ -1,4 +1,4 @@
-# Tailwind Traders Executive BI Dashboard 
+# Tailwind Traders Executive Sales BI Dashboard 
 
 This repository showcases a complete data-driven business intelligence solution for **Tailwind Traders**, built using Microsoft Power BI and Python. The goal was to transform raw sales and financial data into actionable insights for executive decision-making.
 
