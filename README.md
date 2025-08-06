@@ -176,6 +176,7 @@ Enabled built-in **Power BI Subscriptions** and **data-driven alerts** to automa
 ---
 ## Repository Structure
 
+```
 Tailwind-Traders-BI/
 ├── README.md
 ├── assets/
@@ -191,7 +192,8 @@ Tailwind-Traders-BI/
 │   ├── Tailwind-Traders-Sales.xlsx
 │   ├── Purchases.xlsx
 │   └── Countries.xlsx
-└── Tailwind_Traders_Report.pbix
+
+```
 
 
 
