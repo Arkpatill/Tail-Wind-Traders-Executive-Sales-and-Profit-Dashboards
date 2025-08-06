@@ -100,7 +100,7 @@ Implemented key financial insights using **custom DAX measures** to support stra
 - Used the **Performance Analyzer** to monitor DAX query time for card visuals
 - Ensured all metrics were below 200ms rendering time
 
-📷 *YTD Profit, KPIs, and DAX Cards*  
+ *YTD Profit, KPIs, and DAX Cards*  
 ![YTD Profit + KPIs](assets/ytd_profit_kpis.png)
 
 
