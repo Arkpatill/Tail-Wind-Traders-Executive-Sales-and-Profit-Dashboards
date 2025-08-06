@@ -60,7 +60,7 @@ MSE	10861.32
 RMSE	≈ 104 USD
 ```
 RMSE is the average deviation between predicted and actual revenue values.
-```
+
 ---
 
 ### Model Features
