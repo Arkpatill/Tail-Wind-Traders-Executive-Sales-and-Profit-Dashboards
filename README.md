@@ -36,6 +36,7 @@ Tailwind Traders required a set of strategic dashboards to:
   - **Gross Revenue** = \$11,318
   - **Net Revenue** = \$12,137
   - **Delta (Tax impact)** = Net – Gross = \$819
+    
 - Used Power Query to ensure column quality, data types, and validation
 - Prepared for further aggregation in unified USD model
 
