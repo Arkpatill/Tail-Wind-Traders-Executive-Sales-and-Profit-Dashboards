@@ -145,8 +145,24 @@ Developed a 2-page executive dashboard in Power BI combining high-impact KPIs, d
 
  
 ![Mobile Dashboard](assets/mobile_optimized_view.png)
+---
+### 6. **Subscriptions & Alerts for Proactive Monitoring**
 
+Enabled built-in **Power BI Subscriptions** and **data-driven alerts** to automate executive insight delivery and trigger notifications on key thresholds.
 
+####  Subscription Configuration
+- Configured scheduled email delivery for:
+  - `Sales Weekly Summary`
+  - `Profit Weekly Summary`
+- Ensures stakeholders receive updated visuals and KPIs without opening the dashboard manually
+
+####  Alerts
+- Alerts configured for KPI cards:
+  - Notify when Net Revenue drops below a threshold
+  - Trigger updates when Quantity Purchased exceeds forecast
+
+ 
+![Subscription Setup](assets/subscription.png.png)
 
 ---
 
