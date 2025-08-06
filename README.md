@@ -4,7 +4,7 @@ This project showcases an end-to-end business intelligence solution for **Tailwi
 
 ---
 
-## 🚀 Business Objective
+##  Business Objective
 
 Tailwind Traders required a set of strategic dashboards to:
 
@@ -15,7 +15,7 @@ Tailwind Traders required a set of strategic dashboards to:
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 | Tool          | Purpose                                      |
 |---------------|----------------------------------------------|
@@ -26,9 +26,9 @@ Tailwind Traders required a set of strategic dashboards to:
 
 ---
 
-## 📊 Features & Deliverables
+##  Features & Deliverables
 
-### ✅ Case Study Implementations:
+###  Case Study Implementations:
 
 1. **Sales Data Report**
    - Loaded structured `.xlsx` file
@@ -62,7 +62,7 @@ Tailwind Traders required a set of strategic dashboards to:
 
 ---
 
-## 🖼️ Visual Snapshots
+## Visual Snapshots
 
 > _Screenshots from actual Power BI implementation are available in the `/assets` folder._
 
