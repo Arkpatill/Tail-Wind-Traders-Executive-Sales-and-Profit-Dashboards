@@ -52,7 +52,7 @@ python "revenue_prediction_XG Boost.py"
 ### Model Output:
 
 After running, you'll see the model's performance metrics:
-<img src="https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/ml_model/accuracy%20value%20.png?raw=true" width="700"/>
+![accuracy value](accuracy_value.png)
 ```
 Metric	Value
 R² Score	0.8438
