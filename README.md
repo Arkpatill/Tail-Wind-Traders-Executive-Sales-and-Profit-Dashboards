@@ -100,11 +100,37 @@ print(df_long.head())
      - Median Sales
    - Leveraged `DATESQTD()` and `TOTALYTD()` DAX functions
 ---
-5. **Executive Dashboard**
-   - Dual-page report: *Sales Overview* + *Profit Overview*
-   - Created `CalendarTable` for time intelligence
-   - Added card visuals, pie/bar/line charts
-   - Pinned to **mobile-optimized dashboard**
+
+### 5. **Executive Dashboard: Sales + Profit Overview**
+
+- Designed a responsive **Power BI dashboard** with rich KPI cards, comparative visuals, and trend analysis
+- Organized into two report tabs:
+  - 📈 **Sales Overview** – stock, quantity, median sales, product-wise breakdown
+  - 💰 **Profit Overview** – YTD profit, gross/net revenue USD, profit margins, country split
+- Used slicers and DAX filters to enable interactive data exploration
+- Applied **card visuals** and **performance analyzer** to monitor load time and responsiveness
+
+#### 🖼️ Sales Overview
+
+![Sales Overview](assets/sales_overview.png)
+
+---
+
+#### 🖼️ Profit Overview
+
+![Profit Overview](assets/profit_overview.png)
+
+---
+
+#### 📱 Mobile-Optimized Executive Dashboard
+
+Designed for accessibility on phones and tablets, with pinned KPIs:
+
+- Net Revenue (USD)
+- Quantity Purchased
+
+![Mobile Dashboard](assets/mobile_dashboard.png)
+
 ---
 6. **Monitoring Tools**
    - Setup **Power BI Subscriptions** for weekly profit/sales reports
